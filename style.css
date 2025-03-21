@@ -13,7 +13,22 @@
     --danger-color: #ef4444;
 }
 
-/* 深色主题变量 */
+/* 进一步优化颜色对比度和过渡效果 */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --background-color: #f1f5f9;
+    --chat-bg: #e2e8f0;
+    --user-msg-bg: #bfdbfe;
+    --bot-msg-bg: #ffffff;
+    --text-color: #1e293b;
+    --light-text: #64748b;
+    --border-color: #cbd5e1;
+    --card-shadow: 0 6px 24px rgba(15, 23, 42, 0.1);
+    --animation-duration: 0.4s;
+    --danger-color: #dc2626;
+}
+
 body.dark-theme {
     --primary-color: #60a5fa;
     --secondary-color: #93c5fd;
@@ -24,7 +39,7 @@ body.dark-theme {
     --text-color: #e2e8f0;
     --light-text: #94a3b8;
     --border-color: #334155;
-    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    --card-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -673,4 +688,4 @@ body {
 .theme-toggle i {
     font-size: 1.2rem;
     color: var(--primary-color);
-} 
+}
