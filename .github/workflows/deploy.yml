@@ -24,13 +24,13 @@ jobs:
           deno-version: v2.x
 
       - name: Build step
-        run: "deno run --allow-net https://deno.land/std@0.188.0/http/file_server.ts"
+        run: "deno run --allow-net Deno.serve"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "h2o-qwen25-code-31"
           entrypoint: "https://deno.land/std@0.188.0/http/file_server.ts"
-          root: ""
+          root: "root directory"
           
           
